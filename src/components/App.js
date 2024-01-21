@@ -23,15 +23,19 @@ const App = () => {
       <h1>Search Item</h1>
       
       <input type="text" value={input} onChange={(e)=>setInput(e.target.value)} />
+      <ul>
     {
+      
       arr.map((item)=>
       (
-        <ul>
+       
           <li key={item}>{item}</li>
-        </ul>
+       
       )
       )
+      
     }
+    </ul>
     </div>
   )
 }
